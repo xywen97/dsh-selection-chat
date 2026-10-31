@@ -30,13 +30,16 @@
 浮条上三个动作：
 
 - **加入对话**（Codex 的 Add to chat）：把 `文件路径:行号` + 引用正文追加到当前草稿；
-- **侧边提问**（Codex 的 Ask in side chat）：开一个侧边聊天，并把这个片段写进**侧边**输入框草稿（需要同时装 `dsh-sidechat`）；
+- **侧边提问**（Codex 的 Ask in side chat）：开一个侧边聊天，并把这个片段写进**侧边**输入框草稿（需要同时装 `@xywen97/dsh-sidechat`）；
 - **评论**（Claude Code 的选中加 comment）：弹小输入框，写完把「引用 + 我的评论」追加到草稿；
 - 三者都**只填草稿，绝不自动发送**。
 
 ![聊天记录里选中的浮条](docs/selection-bar-chat.png)
 
 ## 安装
+
+已发布到 npm：`dsh-selection-chat@0.1.0`。
+
 
 一条命令装好（npm / git 二选一）：
 
@@ -56,7 +59,7 @@ dsh plugin --profile desktop add "git+https://github.com/xywen97/dsh-selection-c
 「侧边提问」动作需要同作者的侧边聊天插件：
 
 ```sh
-dsh plugin --profile desktop add dsh-sidechat
+dsh plugin --profile desktop add @xywen97/dsh-sidechat
 ```
 
 没装也能用「加入对话 / 评论」，点「侧边提问」会提示先装。
