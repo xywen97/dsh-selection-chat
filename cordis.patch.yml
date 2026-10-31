@@ -1,10 +1,10 @@
 # dsh-selection-chat —— 插件自带的挂载声明。
 #
-# 装上之后，profile 只要在 `dsh.profile.bundles` 里列出本包名即生效：
-#   dsh plugin --profile web add link:<本目录>
+# 装法（任选其一）：
+#   dsh plugin --profile desktop add dsh-selection-chat
+#   dsh plugin --profile desktop add "git+https://github.com/xywen97/dsh-selection-chat.git"
 #
-# host 半端只有 name/apply，真正的功能全在浏览器半端（client.js）：
-# 右栏预览里选中文字 → 浮动条「加入聊天 / 评论」→ 写进当前会话草稿。
+# host 半端为空；功能全在 client.js：选中文字 → 浮条「加入对话 / 侧边提问 / 评论」。
 - insert:
     - id: selection-chat
       name: dsh-selection-chat
