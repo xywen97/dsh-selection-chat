@@ -1,0 +1,55 @@
+{
+  "name": "dsh-selection-chat",
+  "version": "0.1.0",
+  "private": false,
+  "description": "在 DSH 里选中一段文字即可「加入对话 / 侧边提问 / 评论」：来自右侧栏文件预览或聊天记录，只写进输入框草稿，不自动发送。",
+  "type": "module",
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json"
+  },
+  "keywords": [
+    "selection",
+    "quote",
+    "comment",
+    "chat",
+    "sidebar",
+    "reference",
+    "dsh",
+    "deepseek-harness",
+    "dsh-plugin",
+    "cordis"
+  ],
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "README.md",
+    "docs"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": []
+    }
+  },
+  "author": "xywen97",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xywen97/dsh-selection-chat.git"
+  },
+  "homepage": "https://github.com/xywen97/dsh-selection-chat#readme",
+  "bugs": {
+    "url": "https://github.com/xywen97/dsh-selection-chat/issues"
+  },
+  "engines": {
+    "node": ">=20",
+    "dsh": ">=0.2.1-rc.5 <0.3.0-0"
+  }
+}
